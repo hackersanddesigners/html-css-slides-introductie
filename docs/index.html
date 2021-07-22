@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>CSS in ChattyPub</title>
+
+  <meta content="Short presentation on CSS in ChattyPub" name="description">
+  <meta content="Heerko van der Kooij" name="author">
+
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="dist/reset.css" rel="stylesheet">
+  <link href="dist/reveal.css" rel="stylesheet">
+  <link href="dist/theme/black.css" id="theme" rel="stylesheet">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link href="plugin/highlight/monokai.css" rel="stylesheet">
+  <style>
+    @import "assets/fonts/Avara-master/fonts/webfonts/font.css";
+    
+    section {
+      height: 100vh;;
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 100%;
+    }
+
+    .reveal pre {
+      width: auto;
+    }
+    h1,h2,h3,h4{
+      --r-heading-font: "Avara_Bold";
+      --r-heading-color: yellow; 
+      --r-heading1-text-shadow: 0 0 20px white;
+      --r-heading-text-shadow: 0 0 20px white;
+    }
+    .fragment-images {
+      position: relative;
+    }
+    .fragment-images img {
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+    .hv-center {
+          display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    }
+    .reveal [data-id=code-title]{
+      margin-top:0.3em;
+    }
+
+    .reveal ul {
+      margin: 1em 2em;
+    }
+
+    section {
+      padding: 1em;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <div class="hv-center">
+          <h1>ChattyPub</h1>
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+😀 {
+  color: yellow;
+}
+        
+              </script>
+            </code>
+          </pre>
+      </div>
+      </section>
+
+      <section>
+
+        <h2 data-id="code-title">HTML</h2>
+
+        <div class="columns">
+          <pre data-id="code-animation">
+            <code class="hljs" data-trim data-line-numbers="1-17|6-16|7|8-15|14">
+              <script type="text/template"  >
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My website</title>
+  </head>
+  <body>
+    <h1>My article</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur 
+      adipiscing elit. Quid igitur dubitamus 
+      in tota eius natura quaerere quid sit effectum?
+    </p>
+    <p>
+      <img src="baby_sugarglider.jpg" />
+    </p>
+  </body>
+</html>
+              </script>
+            </code>
+          </pre>
+
+          <img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" style="height: 72vh;">
+      </div>
+    </section>
+
+    <section>
+      <div class="hv-center">
+        <h2 data-id="code-title">CSS</h2>
+      </div>
+    </section>
+
+    <section>
+
+      <h2 data-id="code-title">CSS</h2>
+
+      <div class="columns">
+        <pre data-id="code-animation">
+          <code class="hljs" data-trim data-line-numbers="3-10|5-9|6,12|7">
+            <script type="text/template"  >
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>My website</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My article</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur 
+      adipiscing elit. Quid igitur dubitamus 
+      in tota eius natura quaerere quid sit effectum?
+    </p>
+    <p>
+      <img src="baby_sugarglider.jpg" />
+    </p>
+  </body>
+</html>
+            </script>
+          </code>
+        </pre>
+        <div class="fragment-images">
+          <span><img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" ></span>
+          <span class="fragment fade-in"><img src="./assets/images/Screenshot 2021-07-17 at 21.37.01.png" ></span>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+
+    <h2 data-id="code-title">CSS - elements</h2>
+
+    <div class="columns">
+      <pre data-id="code-animation">
+        <code class="hljs" data-trim data-line-numbers="6-8|6-8,13,17,18,20">
+          <script type="text/template"  >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My website</title>
+  <style>
+    p {
+      border: 3px dashed red;
+    }
+  </style>
+</head>
+<body>
+  <h1>My article</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur 
+    adipiscing elit. Quid igitur dubitamus 
+    in tota eius natura quaerere quid sit effectum?
+  </p>
+  <p>
+    <img src="baby_sugarglider.jpg" />
+  </p>
+</body>
+</html>
+          </script>
+        </code>
+      </pre>
+      <div class="fragment-images">
+        <span><img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" ></span>
+        <span class="fragment fade-in"><img src="./assets/images/Screenshot 2021-07-17 at 22.16.32.png" ></span>
+      </div>
+  </div>
+</section>
+
+<section>
+
+  <h2 data-id="code-title">CSS - classes</h2>
+
+  <div class="columns">
+    <pre data-id="code-animation">
+      <code class="hljs" data-trim data-line-numbers="9-12,22">
+        <script type="text/template"  >
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My website</title>
+    <style>
+    p {
+      border: 3px dashed red;
+    }
+    .hilight {
+      background-color: yellow;
+      box-shadow: 0 0 40px rgba(255,255,0,.8);
+    }
+    </style>
+  </head>
+  <body>
+    <h1>My article</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur 
+      adipiscing elit. Quid igitur dubitamus 
+      in tota eius natura quaerere quid sit effectum?
+    </p>
+    <p class="hilight">
+      <img src="baby_sugarglider.jpg" />
+    </p>
+  </body>
+</html>
+        </script>
+      </code>
+    </pre>
+    <div class="fragment-images">
+      <span><img src="./assets/images/class1.png" ></span>
+      <span class="fragment fade-in"><img src="./assets/images/class2.png" ></span>
+    </div>
+</div>
+</section>
+
+      <section>
+        <div class="hv-center">
+          <h1 class="avara">ChattyPub</h1>
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+😀 {
+  color: red;
+}
+        
+              </script>
+            </code>
+          </pre>
+      </div>
+      </section>
+      
+      <section>
+
+        <h2 data-id="code-title">Demo time</h2>
+        <section>
+          <div class="hv-center">
+            <img src="./assets/images/message-1.png" />
+          </div>
+        </section>
+        <section>
+          <div class="hv-center">
+            <img src="./assets/images/rules.png" />
+          </div>
+        </section>
+        <section>
+          <div class="hv-center">
+            <img src="./assets/images/chattypub-message-emoji.png" />
+          </div>
+        </section>
+        <section>
+          <div class="hv-center">
+            <a href="https://chatty-pub.hackersanddesigners.nl/" target="_blank">chatty-pub.hackersanddesigners.nl</a>
+            <img src="./assets/images/chattypub1.png" />
+          </div>
+        </section>
+      </section>
+      
+      <section>
+        <div class="hv-center">
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+🍓 {
+  color: red;
+  font-weight: bold;
+}
+        
+              </script>
+            </code>
+          </pre>
+          <ul>
+            <li>Everything on its own line</li>
+            <li>tabs are optional</li>
+            <li>;DONT; ;FORGET; ;THE; ;SEMI-COLON;</li>
+          </ul>
+      </div>
+      </section>
+
+      <section>
+        <div class="hv-center">
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+a {
+  color: pink;
+  text-transform: uppercase;
+}
+        
+              </script>
+            </code>
+          </pre>
+          <ul>
+            <li>Regular CSS is also possible</li>
+          </ul>
+      </div>
+      </section>
+
+      <section>
+        <div class="hv-center">
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+                @page {
+                  size: 148mm 210mm;
+                }
+        
+              </script>
+            </code>
+          </pre>
+          <ul>
+            <li>Set the page size to A5</li>
+            <li>Only works in MS Edge, Opera and Chrome</li>
+          </ul>
+      </div>
+      </section>
+
+      <section>
+        <div class="hv-center">
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+                @page {
+                  size: landscape;
+                }
+        
+              </script>
+            </code>
+          </pre>
+          <ul>
+            <li>Set the page size to landscape</li>
+            <li>Again, Only works in MS Edge, Opera and Chrome :(</li>
+          </ul>
+      </div>
+      </section>
+
+      <section>
+        <div class="hv-center">
+          <pre data-id="code-animation" style="font-size:2em;">
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+
+                📄 {
+                  page-break-after: always;
+                }
+        
+              </script>
+            </code>
+          </pre>
+          <ul>
+            <li>Force a page break after a message with this reaction</li>
+          </ul>
+      </div>
+      </section>
+
+
+      <section data-markdown>
+        <textarea data-template>
+  # units
+```css
+  border: 3px solid green;
+```
+
+  - `em` and `rem` - Fonts
+  - `px` or `pt` - Pixels and points
+  - `cm` and `in` - In print context
+  - `vw` and `vh` - Viewport
+  
+        </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Backgrounds and borders
+
+- [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+- [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) - The border CSS property sets an element's border.
+- [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) - The border-radius CSS property rounds the corners of an element's outer border edge.
+- [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) - The box-shadow CSS property adds shadow effects around an element's frame.
+       </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Color
+
+- [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color) - The color CSS property sets the foreground color value of an element's text and text decorations.
+- [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) - The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+       </textarea>
+      </section>
+
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Colors
+
+
+          A colors value can defined in multiple ways:
+
+          - By [name/keyword](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#keywords) - `color: red;` will make your text red.
+          - By [hex value](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#hex) - `color: #ff0000;` also red.
+          - Or as a [function](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#rgba), which allows transparency. <br />
+          `color: rgba(255,0,0,0.5);` red, but 50% transparent.       </textarea>
+      </section>
+
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Box model
+
+- [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) - The margin property sets the margin area on all four sides of an element. Margin refers to space between different elements.
+- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) - The padding property sets the padding area on all four sides of an element at once. Padding refers to the spacing inside the border of an element.
+       </textarea>
+      </section>
+
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Fonts
+
+          - [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) - The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
+          
+          You can choose one of the following generic fonts. Which exact font will be used is dependent on your computers' settings.
+          
+          ```css
+          font-family: serif;
+          font-family: sans-serif;
+          font-family: monospace;
+          font-family: cursive;
+          font-family: fantasy;
+          ```
+          </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Fonts
+
+          It is also possible to specify an exact font name, but it will only be used if it is actually available on your system.
+          For example following statement will try to use Helvetica if available, but will fallback on a generic sans-serif font if not. (Note the quotes around the font name).
+          
+          ```css
+          font-family: "Helvetica Neue", sans-serif;
+          ```
+          Chatty-pub allows you to upload your own fonts. More on that later.
+          </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Fonts
+
+          - [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) - The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.
+          - [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style) - The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from its font-family.
+          - [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) - The font-weight CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set.
+          - [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) - The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text.
+       </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Text
+
+- [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) - The letter-spacing CSS property sets the horizontal spacing behavior between text characters.
+- [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) - The text-align CSS property sets the horizontal alignment of the content inside a block element.
+- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) - The text-transform CSS property specifies how to capitalize an element's text. 
+- [word-break](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break) - The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.
+- [word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing) - The word-spacing CSS property sets the length of space between words and between tags.
+- [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow) - The text-shadow CSS property adds shadows to text.
+       </textarea>
+      </section>
+
+      <section data-markdown>
+        <textarea data-template>
+          ### Transforms
+
+          - [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate) - The rotate CSS property allows you to specify rotation of elements
+- [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale) - The scale CSS property allows you to specify the scale (size) of elements
+- [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate) - The translate CSS property allows you to specify translation transforms (position relative to where it originally was) of elements.
+       </textarea>
+      </section>
+      <section  data-background="assets/images/css.gif" data-background-size="contain">
+
+        <h2 data-id="code-title"><a href="https://github.com/hackersanddesigners/chatty-pub/blob/master/front/docs/CSS.md">RTFM</a></h2>
+  
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      disableLayout: true,
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight],
+      dependencies: [
+        { src: 'plugin/mouse-pointer/mouse-pointer.js', async: true },
+      ]
+    });
+
+  </script>
+
+</body>
+
+</html>
