@@ -1,3 +1,1 @@
-# Slides on CSS in ChattyPub, view them [here](https://hackersanddesigners.github.io/chatty-pub-css-slides/)
-
-The introduction slides are here: https://hackersanddesigners.github.io/chatty-pub-css-slides/assets/hdsa-chattypub-intro.pdf (pdf)
+# Bekijk de introductie slides HTML & CSS [hier](https://hackersanddesigners.github.io/html-css-slides-introductie/)
