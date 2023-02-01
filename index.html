@@ -1,105 +1,150 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>CSS in ChattyPub</title>
+    <title>HTML en CSS introductie</title>
 
-  <meta content="Short presentation on CSS in ChattyPub" name="description">
-  <meta content="Heerko van der Kooij" name="author">
+    <meta content="Short presentation on HTML&CSS" name="description">
+    <meta content="Heerko van der Kooij" name="author">
 
-  <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
 
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <link href="dist/reset.css" rel="stylesheet">
-  <link href="dist/reveal.css" rel="stylesheet">
-  <link href="dist/theme/black.css" id="theme" rel="stylesheet">
+    <link href="dist/reset.css" rel="stylesheet">
+    <link href="dist/reveal.css" rel="stylesheet">
+    <link href="dist/theme/black.css" id="theme" rel="stylesheet">
 
-  <!-- Theme used for syntax highlighting of code -->
-  <link href="plugin/highlight/monokai.css" rel="stylesheet">
-  <style>
-    @import "assets/fonts/Avara-master/fonts/webfonts/font.css";
-    
-    section {
-      height: 100vh;;
-    }
-    .columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      height: 100%;
-    }
+    <!-- Theme used for syntax highlighting of code -->
+    <link href="plugin/highlight/monokai.css" rel="stylesheet">
+    <style>
+      @import "assets/fonts/Avara-master/fonts/webfonts/font.css";
 
-    .reveal pre {
-      width: auto;
-    }
-    h1,h2,h3,h4{
-      --r-heading-font: "Avara_Bold";
-      --r-heading-color: yellow; 
-      --r-heading1-text-shadow: 0 0 20px white;
-      --r-heading-text-shadow: 0 0 20px white;
-    }
-    .fragment-images {
-      position: relative;
-    }
-    .fragment-images img {
-      position: absolute;
-      top:0;
-      left: 0;
-    }
-    .hv-center {
-          display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    }
-    .reveal [data-id=code-title]{
-      margin-top:0.3em;
-    }
+      section {
+        height: 100vh;
+      }
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+      }
 
-    .reveal ul {
-      margin: 1em 2em;
-    }
+      .reveal pre {
+        width: auto;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        --r-heading-font: "Avara_Bold";
+        --r-heading-color: yellow;
+        --r-heading1-text-shadow: 0 0 20px white;
+        --r-heading-text-shadow: 0 0 20px white;
+      }
+      .fragment-images {
+        position: relative;
+      }
+      .fragment-images img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .hv-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+      }
+      .reveal [data-id=code-title] {
+        margin-top: 0.3em;
+      }
 
-    section {
-      padding: 1em;
-      box-sizing: border-box;
-    }
-  </style>
-</head>
+      .reveal ul {
+        margin: 1em 2em;
+      }
 
-<body>
+      section {
+        padding: 1em;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
 
-  <div class="reveal">
+  <body>
 
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-      <section>
-        <div class="hv-center">
-          <h1>ChattyPub</h1>
-          <pre data-id="code-animation" style="font-size:2em;">
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <div class="hv-center">
+            <h1>HTML</h1>
+            <pre data-id="code-animation" style="font-size:2em;">
             <code class="hljs" data-trim>
               <script type="text/template"  >
 
-😀 {
-  color: yellow;
-}
+<html>😀</html>
         
               </script>
             </code>
           </pre>
-      </div>
-      </section>
+          </div>
+        </section>
 
-      <section>
+        <section>
 
-        <h2 data-id="code-title">HTML</h2>
+          <h2 data-id="code-title">HTML</h2>
 
-        <div class="columns">
-          <pre data-id="code-animation">
+          <div class="columns">
+            <pre data-id="code-animation">
+            test.html
+            <code class="hljs" data-trim>
+              <script type="text/template"  >
+    Hallo                                   
+              </script>
+            </code>
+          </pre>
+
+            <img src="./assets/images/hallo.png" style="height: 72vh;">
+          </div>
+        </section>
+
+        <section>
+
+          <h2 data-id="code-title">HTML</h2>
+
+          <div class="columns">
+
+            <pre data-id="code-animation">
+            <code class="hljs" data-trim data-line-numbers="1,8|2,4|3|5,7|6" >
+              <script type="text/template" >
+
+<html>
+  <head>
+    <title>Mijn eerste website</title>
+  </head>
+  <body>
+    Hallo
+  </body>
+</html>
+              </script>
+            </code>
+          </pre>
+
+            <img src="./assets/images/hallo_html.png" style="height: 72vh;">
+          </div>
+        </section>
+
+        <section>
+
+          <h2 data-id="code-title">HTML</h2>
+
+          <div class="columns">
+            <pre data-id="code-animation">
             <code class="hljs" data-trim data-line-numbers="1-17|6-16|7|8-15|14">
               <script type="text/template"  >
 <!DOCTYPE html>
@@ -123,22 +168,22 @@
             </code>
           </pre>
 
-          <img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" style="height: 72vh;">
-      </div>
-    </section>
+            <img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" style="height: 72vh;">
+          </div>
+        </section>
 
-    <section>
-      <div class="hv-center">
-        <h2 data-id="code-title">CSS</h2>
-      </div>
-    </section>
+        <section>
+          <div class="hv-center">
+            <h2 data-id="code-title">CSS</h2>
+          </div>
+        </section>
 
-    <section>
+        <section>
 
-      <h2 data-id="code-title">CSS</h2>
+          <h2 data-id="code-title">CSS</h2>
 
-      <div class="columns">
-        <pre data-id="code-animation">
+          <div class="columns">
+            <pre data-id="code-animation">
           <code class="hljs" data-trim data-line-numbers="3-10|5-9|6,12|7">
             <script type="text/template"  >
 <!DOCTYPE html>
@@ -166,20 +211,19 @@
             </script>
           </code>
         </pre>
-        <div class="fragment-images">
-          <span><img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" ></span>
-          <span class="fragment fade-in"><img src="./assets/images/Screenshot 2021-07-17 at 21.37.01.png" ></span>
-        </div>
-    </div>
-  </section>
+            <div class="fragment-images">
+              <span><img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" ></span>
+              <span class="fragment fade-in"><img src="./assets/images/Screenshot 2021-07-17 at 21.37.01.png" ></span>
+            </div>
+          </div>
+        </section>
 
+        <section>
 
-  <section>
-
-    <h2 data-id="code-title">CSS - elements</h2>
-
-    <div class="columns">
-      <pre data-id="code-animation">
+          <h2 data-id="code-title">CSS - elementen</h2>
+          Een CSS selector met de naam van een element, veranderd alle elementen van dat type.
+          <div class="columns">
+            <pre data-id="code-animation">
         <code class="hljs" data-trim data-line-numbers="6-8|6-8,13,17,18,20">
           <script type="text/template"  >
 <!DOCTYPE html>
@@ -207,19 +251,19 @@
           </script>
         </code>
       </pre>
-      <div class="fragment-images">
-        <span><img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" ></span>
-        <span class="fragment fade-in"><img src="./assets/images/Screenshot 2021-07-17 at 22.16.32.png" ></span>
-      </div>
-  </div>
-</section>
+            <div class="fragment-images">
+              <span><img src="./assets/images/Screenshot 2021-07-17 at 21.02.53.png" ></span>
+              <span class="fragment fade-in"><img src="./assets/images/Screenshot 2021-07-17 at 22.16.32.png" ></span>
+            </div>
+          </div>
+        </section>
 
-<section>
+        <section>
 
-  <h2 data-id="code-title">CSS - classes</h2>
+          <h2 data-id="code-title">CSS - class</h2>
 
-  <div class="columns">
-    <pre data-id="code-animation">
+          <div class="columns">
+            <pre data-id="code-animation">
       <code class="hljs" data-trim data-line-numbers="9-12,22">
         <script type="text/template"  >
 <!DOCTYPE html>
@@ -251,242 +295,127 @@
         </script>
       </code>
     </pre>
-    <div class="fragment-images">
-      <span><img src="./assets/images/class1.png" ></span>
-      <span class="fragment fade-in"><img src="./assets/images/class2.png" ></span>
-    </div>
-</div>
-</section>
-
-      <section>
-        <div class="hv-center">
-          <h1 class="avara">ChattyPub</h1>
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
-
-😀 {
-  color: red;
-}
-        
-              </script>
-            </code>
-          </pre>
-      </div>
-      </section>
-      
-      <section>
-
-        <h2 data-id="code-title">Demo time</h2>
-        <section>
-          <div class="hv-center">
-            <img src="./assets/images/message-1.png" />
+            <div class="fragment-images">
+              <span><img src="./assets/images/class1.png" ></span>
+              <span class="fragment fade-in"><img src="./assets/images/class2.png" ></span>
+            </div>
           </div>
         </section>
-        <section>
-          <div class="hv-center">
-            <img src="./assets/images/rules.png" />
-          </div>
-        </section>
-        <section>
-          <div class="hv-center">
-            <img src="./assets/images/chattypub-message-emoji.png" />
-          </div>
-        </section>
-        <section>
-          <div class="hv-center">
-            <a href="https://chatty-pub.hackersanddesigners.nl/" target="_blank">chatty-pub.hackersanddesigners.nl</a>
-            <img src="./assets/images/chattypub1.png" />
-          </div>
-        </section>
-      </section>
-      
-      <section>
-        <div class="hv-center">
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
 
-🍓 {
-  color: red;
-  font-weight: bold;
-}
-        
-              </script>
-            </code>
-          </pre>
-          <ul>
-            <li>Everything on its own line</li>
-            <li>tabs are optional</li>
-            <li>;DONT; ;FORGET; ;THE; ;SEMI-COLON;</li>
-          </ul>
-      </div>
-      </section>
-
-      <section>
-        <div class="hv-center">
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
-
-a {
-  color: pink;
-  text-transform: uppercase;
-}
-        
-              </script>
-            </code>
-          </pre>
-          <ul>
-            <li>Regular CSS is also possible</li>
-          </ul>
-      </div>
-      </section>
-
-      <section>
-        <div class="hv-center">
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
-
-                @page {
-                  size: 148mm 210mm;
-                }
-        
-              </script>
-            </code>
-          </pre>
-          <ul>
-            <li>Set the page size to A5</li>
-            <li>Only works in MS Edge, Opera and Chrome</li>
-          </ul>
-      </div>
-      </section>
-
-      <section>
-        <div class="hv-center">
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
-
-                @page {
-                  size: landscape;
-                }
-        
-              </script>
-            </code>
-          </pre>
-          <ul>
-            <li>Set the page size to landscape</li>
-            <li>Again, Only works in MS Edge, Opera and Chrome :(</li>
-          </ul>
-      </div>
-      </section>
-
-      <section>
-        <div class="hv-center">
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
-
-                📄 {
-                  page-break-after: always;
-                }
-        
-              </script>
-            </code>
-          </pre>
-          <ul>
-            <li>Force a page break after a message with this reaction</li>
-          </ul>
-      </div>
-      </section>
-      
-      <section>
-        <div class="hv-center">
-          <pre data-id="code-animation" style="font-size:2em;">
-            <code class="hljs" data-trim>
-              <script type="text/template"  >
-
-                .header {
-                  font-family: "daubentonwebfont_ttf";
-                }
-              </script>
-            </code>
-          </pre>
-          <ul>
-            <li>Upload the font first, and wait a bit.</li>
-          </ul>
-      </div>
-      </section>
-
-      <section data-markdown>
-        <textarea data-template>
-  # units
+        <section data-markdown>
+          <textarea data-template>
+  # Eenheden
 ```css
   border: 3px solid green;
 ```
-
-  - `em` and `rem` - Fonts
-  - `px` or `pt` - Pixels and points
-  - `cm` and `in` - In print context
-  - `vw` and `vh` - Viewport
+  - `px` - Pixels. Voor lettertypes en afbeeldingen
+  - `%` - Percentage van het "parent"	element. Voor breedte en hoogte.
+  - `vw` and `vh` - Viewport eenheid: 1vw = 1% van de viewport breedte.
   
         </textarea>
-      </section>
+        </section>
 
-      <section data-markdown>
-        <textarea data-template>
-          ### Backgrounds and borders
+        <section style="background-color: #cc00cc; color: black;  background-image: url('./assets/images/paper.png');">
+          <div data-markdown>
+            <textarea data-template>
+          ### Achtergrond
 
-- [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
-- [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) - The border CSS property sets an element's border.
-- [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) - The border-radius CSS property rounds the corners of an element's outer border edge.
-- [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) - The box-shadow CSS property adds shadow effects around an element's frame.
+- [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color) - De property background-color stelt de achtergrondkleur van een element in.
+- [background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) - De property background-image stelt een of meer achtergrondafbeeldingen in op een element.
+
        </textarea>
-      </section>
+          </div>
+          <pre data-id="code-animation">
+            <code class="hljs" data-trim  >
+              <script type="text/template" >
+body {
+  background-image: url("paper.png");
+}
+              </script>
+            </code>
+          </pre>
 
-      <section data-markdown>
-        <textarea data-template>
+        </section>
+
+        <section>
+          <div data-markdown>
+            <textarea data-template>
+          ### Randen
+
+- [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) - De `border` property veranderd alle randen van een element.
+- [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) - De property `border-radius` rondt de hoeken van de buitenste rand van een element af.
+- [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) - De property `box-shadow` voegt schaduweffecten toe rond het frame van een element.
+          </textarea>
+          </div>
+          <div class="demo" style="border: 5px solid hotpink;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,0,255,.8);">
+            <pre data-id="code-animation">
+            <code class="hljs" data-trim  >
+              <script type="text/template" >
+.demo {
+  border: 5px solid hotpink;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255,0,255,.8);
+}
+              </script>
+            </code>
+          </pre>
+          </div>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
           ### Color
 
-- [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color) - The color CSS property sets the foreground color value of an element's text and text decorations.
-- [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) - The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+- [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color) - De property `color` stelt de voorgrondkleurwaarde in van de tekst en tekstversieringen van een element.
+- [opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) - De property `opacity` stelt de dekking van een element in. Dekking is de mate waarin inhoud achter een element verborgen is en is het tegenovergestelde van transparantie.
+
        </textarea>
-      </section>
+        </section>
 
+        <section>
+          <div data-markdown>
+            <textarea data-template>
+          ### Kleuren
 
-      <section data-markdown>
-        <textarea data-template>
-          ### Colors
+          Een kleurwaarde kan op meerdere manieren worden gedefinieerd:
 
+           - Door [name/keyword](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#keywords) - `color: red;` maakt je tekst rood.
+           - Door [hex waarde](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#hex) - `kleur: #ff0000;` ook rood.
+           - Of als een [functie](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#rgba), die transparantie mogelijk maakt. <br/>
+           `kleur: rgba(255,0,0,0.5);` rood, maar 50% transparant. 
 
-          A colors value can defined in multiple ways:
+          </textarea>
+          </div>
+          <!-- div with three columns -->
 
-          - By [name/keyword](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#keywords) - `color: red;` will make your text red.
-          - By [hex value](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#hex) - `color: #ff0000;` also red.
-          - Or as a [function](http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors#rgba), which allows transparency. <br />
-          `color: rgba(255,0,0,0.5);` red, but 50% transparent.       </textarea>
-      </section>
+          <div class="columns-3" style="columns: 3; background-image: url('./assets/images/paper.png')">
+            <p style="color: red;">color: red;</p>
+            <p style="color: #ff0000;">color: #ff0000;</p>
+            <p style="color: rgba(255,0,0,0.5);">color: rgba(255,0,0,0.5);</p>
+          </div>
+          
+        </section>
 
-
-      <section data-markdown>
-        <textarea data-template>
+        <section data-markdown>
+          <textarea data-template>
           ### Box model
 
-- [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) - The margin property sets the margin area on all four sides of an element. Margin refers to space between different elements.
-- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) - The padding property sets the padding area on all four sides of an element at once. Padding refers to the spacing inside the border of an element.
-       </textarea>
-      </section>
+- [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) - De property margin stelt het margegebied aan alle vier de zijden van een element in. Marge verwijst naar ruimte tussen verschillende elementen.
+- [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) - De property padding stelt het opvulgebied aan alle vier de zijden van een element tegelijk in. Opvulling verwijst naar de afstand binnen de rand van een element.
+- [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) - De property position stelt in hoe een element in een document wordt gepositioneerd. De properties `top`, `right`, `bottom` en `left` bepalen de uiteindelijke locatie van gepositioneerde elementen.
+        </textarea>
 
+        </section>
 
-      <section data-markdown>
-        <textarea data-template>
+        <section data-markdown>
+          <textarea data-template>
           ### Fonts
 
-          - [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) - The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
+          - [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) - De property font-family specificeert de lettertypefamilies en/of generieke familienamen voor het geselecteerde element.
           
-          You can choose one of the following generic fonts. Which exact font will be used is dependent on your computers' settings.
+           Je kan een van de volgende generieke lettertypen kiezen. Welk lettertype precies wordt gebruikt, is afhankelijk van de instellingen van je computer.
           
           ```css
           font-family: serif;
@@ -495,20 +424,24 @@ a {
           font-family: cursive;
           font-family: fantasy;
           ```
+          <span style="font-family: sans-serif !important">sans-serif</span> / <span style="font-family: serif !important">serif</span> / <span style="font-family: monospace !important">monospace</span> / <span style="font-family: cursive !important">cursive</span> / <span style="font-family: fantasy !important">fantasy</span>
           </textarea>
+
+        </section>
+
       </section>
 
       <section data-markdown>
         <textarea data-template>
-          ### Fonts
+          ### Fonts.
 
-          It is also possible to specify an exact font name, but it will only be used if it is actually available on your system.
-          For example following statement will try to use Helvetica if available, but will fallback on a generic sans-serif font if not. (Note the quotes around the font name).
+          Het is ook mogelijk om een exacte lettertypenaam op te geven, maar deze wordt alleen gebruikt als deze daadwerkelijk beschikbaar is op je computer.
+          De volgende rule zal bijvoorbeeld proberen Helvetica te gebruiken, indien beschikbaar, maar zal terugvallen op een generiek schreefloos lettertype als dat niet het geval is. (Let op de aanhalingstekens rond de naam van het lettertype).
           
           ```css
           font-family: "Helvetica Neue", sans-serif;
           ```
-          Chatty-pub allows you to upload your own fonts. More on that later.
+
           </textarea>
       </section>
 
@@ -516,10 +449,10 @@ a {
         <textarea data-template>
           ### Fonts
 
-          - [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) - The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.
-          - [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style) - The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from its font-family.
-          - [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) - The font-weight CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family that is currently set.
-          - [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) - The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text.
+          - [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) - De property font-size stelt de grootte van het lettertype in.
+          - [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style) -  De property font-style stelt in of een lettertype moet worden opgemaakt met een normaal, cursief of schuin gezicht uit de lettertypefamilie.
+          - [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) - De property font-weight stelt het gewicht (of vetheid) van het lettertype in. De beschikbare gewichten zijn afhankelijk van de lettertypefamilie die momenteel is ingesteld.
+          - [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) - De property regelhoogte stelt de hoogte van een regelvak in. Het wordt vaak gebruikt om de afstand tussen tekstregels in te stellen.- [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) - De property regelhoogte stelt de hoogte van een regelvak in. Het wordt vaak gebruikt om de afstand tussen tekstregels in te stellen.
        </textarea>
       </section>
 
@@ -527,28 +460,42 @@ a {
         <textarea data-template>
           ### Text
 
-- [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) - The letter-spacing CSS property sets the horizontal spacing behavior between text characters.
-- [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) - The text-align CSS property sets the horizontal alignment of the content inside a block element.
-- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) - The text-transform CSS property specifies how to capitalize an element's text. 
-- [word-break](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break) - The word-break CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.
-- [word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing) - The word-spacing CSS property sets the length of space between words and between tags.
-- [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow) - The text-shadow CSS property adds shadows to text.
+- [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing) - De property letter-spacing stelt het gedrag van de horizontale spatiëring tussen teksttekens in.
+- [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) - De property text-align stelt de horizontale uitlijning van de inhoud binnen een blokelement in.
+- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform) - De property text-transform specificeert hoe de tekst van een element in hoofdletters moet worden geschreven.
+- [word-break](https://developer.mozilla.org/en-US/docs/Web/CSS/word-break) - De property voor woordafbreking stelt in of regeleinden verschijnen waar de tekst anders het inhoudsvak zou overlopen.
+- [word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing) - TDe property woordafstand stelt de lengte van de ruimte tussen woorden en tussen tags in.
+- [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow) - De property text-shadow voegt schaduwen toe aan tekst.
        </textarea>
       </section>
 
-      <section data-markdown>
-        <textarea data-template>
+      <section >
+        <div data-markdown>
+          <textarea data-template>
           ### Transforms
 
-          - [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate) - The rotate CSS property allows you to specify rotation of elements
-- [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale) - The scale CSS property allows you to specify the scale (size) of elements
-- [translate](https://developer.mozilla.org/en-US/docs/Web/CSS/translate) - The translate CSS property allows you to specify translation transforms (position relative to where it originally was) of elements.
+          - [rotate](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate) - Met de property roteren kunt u de rotatie van elementen specificeren
+- [scale](https://developer.mozilla.org/en-US/docs/Web/CSS/scale) - Met de property scale kunt u de schaal (grootte) van elementen specificeren
        </textarea>
+        </div>
+        <div style="transform: rotate(15deg) scale(2); transform-origin: top left">
+          <pre data-id="code-animation">
+            <code class="hljs" data-trim  >
+              <script type="text/template" >
+      transform: rotate(15deg) scale(2);
+              </script>
+            </code>
+          </pre>
+        </div>
+
       </section>
+
       <section  data-background="assets/images/css.gif" data-background-size="contain">
 
-        <h2 data-id="code-title"><a href="https://github.com/hackersanddesigners/chatty-pub/blob/master/front/docs/CSS.md">RTFM</a></h2>
-  
+        <h2 data-id="code-title">
+          <a href="https://github.com/hackersanddesigners/chatty-pub/blob/master/front/docs/CSS.md" style="text-decoration: underline;">Terug lezen?</a>
+        </h2>
+
       </section>
 
     </div>
@@ -572,12 +519,16 @@ a {
       hash: true,
       disableLayout: true,
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight],
+      plugins: [
+        RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight
+      ],
       dependencies: [
-        { src: 'plugin/mouse-pointer/mouse-pointer.js', async: true },
+        {
+          src: 'plugin/mouse-pointer/mouse-pointer.js',
+          async: true
+        }
       ]
     });
-
   </script>
 
 </body>
